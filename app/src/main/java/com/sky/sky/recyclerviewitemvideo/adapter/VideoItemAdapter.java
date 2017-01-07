@@ -140,10 +140,19 @@ public class VideoItemAdapter extends RecyclerView.Adapter<VideoItemViewHolder> 
         if (lastHolder != null) {
             resetHolder(lastHolder);
         }
+        List<VideoInfo.ResultBean.VideoListByTimeBean.SegsBean> segsBeen = videos.get(holder.getAdapterPosition()).getSegs();
+        String videoPath=null;
+//        if (segsBeen.size()>1){
+//            //高清
+//             videoPath = segsBeen.get(1).getUrl();
+//        }else{
+        //以防某些视频只有一个地址，取第一个地址标清的
+            videoPath = segsBeen.get(0).getUrl();
+//        }
 //        //标清
 //        String videoPath = videos.get(tag.getAdapterPosition()).getSegs().get(0).getUrl();
-        //高清
-        String videoPath = videos.get(holder.getAdapterPosition()).getSegs().get(1).getUrl();
+
+
 //       //超清
 //     String videoPath = videos.get(tag.getAdapterPosition()).getSegs().get(2).getUrl();
         try {
