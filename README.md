@@ -23,10 +23,10 @@ view:包中存放界面处理类
    * Model 依然是业务逻辑和实体模型  
    * Presenter 负责完成View于Model间的交互   
 
-3》.在该项目中的体现是：
-  M:VideoModel接口和其实现类VideoModelImpl
-  V:指的是VideoPlayerView
-  P:VideoPresenter接口和其实现类VideoPresenterImpl
+3》.在该项目中的体现是:  
+  M:VideoModel接口和其实现类VideoModelImpl  
+  V:指的是VideoPlayerView  
+  P:VideoPresenter接口和其实现类VideoPresenterImpl  
 
 
 
